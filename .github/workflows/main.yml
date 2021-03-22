@@ -13,7 +13,7 @@ jobs:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD}}
         run: |
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-      - name: docker build
+      - name: docker build&push
         run: |
           docker build -t grigciulache/httpd3 .
           docker push grigciulache/httpd3
