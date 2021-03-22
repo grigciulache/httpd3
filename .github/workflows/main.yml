@@ -16,3 +16,4 @@ jobs:
       - name: docker build
         run: |
           docker build -t grigciulache/httpd3 .
+          docker push grigciulache/httpd3
